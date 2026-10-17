@@ -1,0 +1,56 @@
+{
+  "name": "go-fastly-ctrld-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "node": ">=22.13.0",
+    "bun": "1.4.2"
+  },
+  "scripts": {
+    "prepare:licenses": "node ../scripts/licenses.mjs --app",
+    "predev": "bun run prepare:licenses",
+    "prebuild": "bun run prepare:licenses",
+    "pretypecheck": "bun run prepare:licenses",
+    "pretest": "bun run prepare:licenses",
+    "dev": "vite --host 127.0.0.1",
+    "build": "node ../scripts/frontend.mjs typecheck --noEmit && vite build",
+    "typecheck": "node ../scripts/frontend.mjs typecheck --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:bindings": "prettier --write bindings --ignore-path ../.gitignore",
+    "format:bindings:check": "prettier --check bindings --ignore-path ../.gitignore",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fontsource/lato": "5.3.0",
+    "@primeuix/themes": "2.0.3",
+    "@wailsio/runtime": "3.0.0-beta.28",
+    "primeicons": "7.0.0",
+    "primevue": "4.5.5",
+    "tailwindcss-primeui": "0.6.0",
+    "vue": "3.5.43",
+    "vue-router": "4.6.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "24.19.2",
+    "@vitejs/plugin-vue": "6.0.10",
+    "@vue/test-utils": "2.5.1",
+    "eslint": "10.12.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-vue": "10.11.1",
+    "jsdom": "26.1.0",
+    "prettier": "3.9.10",
+    "sass": "1.105.2",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.1",
+    "vite": "8.3.4",
+    "vitest": "5.0.3",
+    "vue-tsc": "3.3.13"
+  }
+}

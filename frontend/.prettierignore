@@ -1,0 +1,8 @@
+dist
+node_modules
+bindings
+bun.lock
+generated
+# 固定上游原始樣式，另以來源雜湊測試核對，不重新排版。
+src/assets/layout
+src/assets/tailwind.css

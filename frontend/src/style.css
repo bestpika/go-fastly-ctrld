@@ -1,0 +1,15 @@
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  :root.app-dark {
+    color-scheme: dark;
+  }
+}
+
+/* 保留減少動態效果偏好，不自訂元件的外觀或一般互動動畫。 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

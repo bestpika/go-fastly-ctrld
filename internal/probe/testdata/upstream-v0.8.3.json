@@ -1,0 +1,10 @@
+[
+ {"name":"same-smooth","download":true,"hasBaseline":true,"baseSpeeds":[50,50,50],"candidateSpeeds":[100,100,100],"baseLatency":40,"candidateLatency":20,"apply":false,"candidateFast":3,"candidateMedian":100},
+ {"name":"more-smooth","download":true,"hasBaseline":true,"baseSpeeds":[4,4,100],"candidateSpeeds":[100,100,100],"baseLatency":40,"candidateLatency":20,"apply":true,"candidateFast":3,"candidateMedian":100},
+ {"name":"failed-round-counts-zero","download":true,"hasBaseline":true,"baseSpeeds":[4,4,100],"candidateSpeeds":[0,100,100],"baseLatency":40,"candidateLatency":20,"apply":true,"candidateFast":2,"candidateMedian":100},
+ {"name":"no-extra-percent","download":true,"hasBaseline":true,"baseSpeeds":[0,10,10],"candidateSpeeds":[10,10,10],"baseLatency":40,"candidateLatency":20,"apply":true,"candidateFast":3,"candidateMedian":10},
+ {"name":"base-wins","download":true,"hasBaseline":true,"baseSpeeds":[100,100,100],"candidateSpeeds":[10,10,10],"baseLatency":40,"candidateLatency":20,"apply":false,"candidateFast":0,"candidateMedian":10},
+ {"name":"no-baseline","download":true,"hasBaseline":false,"baseSpeeds":[],"candidateSpeeds":[10,10,10],"baseLatency":40,"candidateLatency":20,"apply":true,"candidateFast":3,"candidateMedian":10},
+ {"name":"exact-ten-ms","download":false,"hasBaseline":true,"baseSpeeds":[],"candidateSpeeds":[],"baseLatency":30,"candidateLatency":20,"apply":false,"candidateFast":0,"candidateMedian":0},
+ {"name":"more-than-ten-ms","download":false,"hasBaseline":true,"baseSpeeds":[],"candidateSpeeds":[],"baseLatency":31,"candidateLatency":20,"apply":true,"candidateFast":0,"candidateMedian":0}
+]

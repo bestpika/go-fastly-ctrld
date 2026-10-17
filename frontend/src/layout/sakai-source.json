@@ -1,0 +1,160 @@
+{
+  "repository": "https://github.com/primefaces/sakai-vue",
+  "version": "5.0.0",
+  "commit": "ec6b6ef53ad4fa7f2861277f50f2d9e236c40372",
+  "license": "MIT",
+  "styles": {
+    "repository": "https://github.com/primefaces/sakai-vue",
+    "version": "4.3.0",
+    "commit": "7c32ae1f6fc75e18a5e735f76e1ab25d1167d26c",
+    "license": "MIT",
+    "upstreamPrefix": "src/assets/",
+    "matches": {
+      "repository": "https://github.com/primefaces/sakai-assets",
+      "commit": "eaa70ece4cfa9aeb8f60b36dce5a422b6bae8003"
+    },
+    "note": "十五份樣式沿用主儲存庫歷史提交的 MIT 來源，與 Sakai 5.0.0 固定資產逐檔 Git blob 相同；不引入獨立資產子模組，也不推定該儲存庫其他內容的授權。"
+  },
+  "unmodified": [
+    {
+      "upstream": "LICENSE.md",
+      "source": "layout",
+      "local": "third_party/sakai-vue/LICENSE.md",
+      "gitBlob": "e58be7f40ca1b9dc1329e0e3ca1fc963e7b4eb1a"
+    },
+    {
+      "upstream": "src/assets/tailwind.css",
+      "source": "styles",
+      "local": "frontend/src/assets/tailwind.css",
+      "gitBlob": "8340fce51bdb874e90e04f9e4b4ce82e3265f29d"
+    },
+    {
+      "upstream": "src/assets/layout/_core.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_core.scss",
+      "gitBlob": "672a6bf0fd594440304dd1fff3332d2bc805607e"
+    },
+    {
+      "upstream": "src/assets/layout/_footer.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_footer.scss",
+      "gitBlob": "27bcbf0e92a538ad7456da399affab8700ef5bcc"
+    },
+    {
+      "upstream": "src/assets/layout/_main.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_main.scss",
+      "gitBlob": "a223ac17b18701969d76a0ee801438ed97c9dd92"
+    },
+    {
+      "upstream": "src/assets/layout/_menu.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_menu.scss",
+      "gitBlob": "8b581b479d51503625d887d50e6e61e2e5df2fda"
+    },
+    {
+      "upstream": "src/assets/layout/_mixins.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_mixins.scss",
+      "gitBlob": "ad330b10be1dbddf6107d1288c03c35661a8389c"
+    },
+    {
+      "upstream": "src/assets/layout/_preloading.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_preloading.scss",
+      "gitBlob": "a81410444c2761e153a88db5952eafc5c20d778f"
+    },
+    {
+      "upstream": "src/assets/layout/_responsive.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_responsive.scss",
+      "gitBlob": "561d5f1b157240e8d97eb78e96bd7ed67a172845"
+    },
+    {
+      "upstream": "src/assets/layout/_topbar.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_topbar.scss",
+      "gitBlob": "b8e34b391bc01f5717aa3051bd61f948ca1f58f2"
+    },
+    {
+      "upstream": "src/assets/layout/_typography.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_typography.scss",
+      "gitBlob": "b17bbc2f9c4632a40547bd542992ece4fa6c1f13"
+    },
+    {
+      "upstream": "src/assets/layout/_utils.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/_utils.scss",
+      "gitBlob": "6ccec88ddb7740c198cee202f850bfe115a80b8c"
+    },
+    {
+      "upstream": "src/assets/layout/layout.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/layout.scss",
+      "gitBlob": "ce93b988d919639afe3f53fdf73b0534ac4a8831"
+    },
+    {
+      "upstream": "src/assets/layout/variables/_common.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/variables/_common.scss",
+      "gitBlob": "2a040c2c9bb15bef39563f2f56d5738346719908"
+    },
+    {
+      "upstream": "src/assets/layout/variables/_dark.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/variables/_dark.scss",
+      "gitBlob": "bb916050e5fafe9f8ae9dcc46fcae8c5230dbe84"
+    },
+    {
+      "upstream": "src/assets/layout/variables/_light.scss",
+      "source": "styles",
+      "local": "frontend/src/assets/layout/variables/_light.scss",
+      "gitBlob": "aa3403c92448c84d4be8695adc29d4f1a1b4f619"
+    }
+  ],
+  "adapted": [
+    {
+      "upstream": "src/layout/AppLayout.vue",
+      "local": "frontend/src/layout/AppLayout.vue",
+      "gitBlob": "966f38a6eb5ccf80c5f2e2e0f16be64b2ae9bb49",
+      "changes": "TypeScript、宿主載入與通知、Go 主題與跨斷點清理；沿用 v5 布局狀態及遮罩關閉，外點與路由監聽移至官方側欄。"
+    },
+    {
+      "upstream": "src/layout/AppTopbar.vue",
+      "local": "frontend/src/layout/AppTopbar.vue",
+      "gitBlob": "82f489d9a8149a290cc69fb7373e5f36a2b29e02",
+      "changes": "產品品牌、Go 主題保存、ARIA 與本地化；移除樣板展示設定及假操作，保留官方頂欄結構。"
+    },
+    {
+      "upstream": "src/layout/AppSidebar.vue",
+      "local": "frontend/src/layout/AppSidebar.vue",
+      "gitBlob": "c1970bd142d0fc1939d821a92f9943387a6b813b",
+      "changes": "沿用 v5 sidebarRef、路由 activePath 與外點監聽；補 TypeScript、查詢參數及跨斷點清理、inert、官方 FocusTrap、Escape、開啟聚焦與關閉返回。"
+    },
+    {
+      "upstream": "src/layout/AppMenu.vue",
+      "local": "frontend/src/layout/AppMenu.vue",
+      "gitBlob": "540c143c43e682dbc7b0fa93033e6400fe0a741e",
+      "changes": "將官方選單 model 換為既有八頁業務路由，移除舊 index 傳遞並使用穩定 key。"
+    },
+    {
+      "upstream": "src/layout/AppMenuItem.vue",
+      "local": "frontend/src/layout/AppMenuItem.vue",
+      "gitBlob": "47adb65cb5cf35e61c427662fc4754f28b272d70",
+      "changes": "沿用 v5 fullPath／parentPath、activePath、根群組 hover、遞迴 key 與 exactActiveClass；補 TypeScript、空值及父路徑安全收合、鍵盤與 ARIA 語意，停用路由於 capture 階段阻擋導覽。"
+    },
+    {
+      "upstream": "src/layout/AppFooter.vue",
+      "local": "frontend/src/layout/AppFooter.vue",
+      "gitBlob": "487141c96864adb047e0b4c80207ab4256ef25c7",
+      "changes": "保留 Sakai 與 PrimeVue 署名，加入版本及 DNS 警語，避免 WebView 直接開外站。"
+    },
+    {
+      "upstream": "src/layout/composables/layout.js",
+      "local": "frontend/src/layout/composables/layout.ts",
+      "gitBlob": "2ea7f06faf521d806177fe1bda88edb850c2a570",
+      "changes": "沿用 v5 狀態命名、桌面 static／overlay 與行動選單分流及模式重設；明確初始化 mobileMenuActive／anchored，補側欄可見狀態、關閉清理及 resize 追蹤，主題保存交由 Go，移除未使用的舊 activeMenuItem。"
+    }
+  ]
+}
